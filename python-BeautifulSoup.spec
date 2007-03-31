@@ -8,23 +8,25 @@ Version:	3.0.3
 Release:	1
 License:	Python
 Group:		Development/Languages/Python
-Source0:	http://www.crummy.com/software/%{_module}/download/%{_module}.tar.gz
+Source0:	http://www.crummy.com/software/BeautifulSoup/download/%{_module}.tar.gz
 # Source0-md5:	7b788918e887b6b2c1bfef28ca4eb0d1
 URL:		http://www.crummy.com/software/BeautifulSoup/
-%pyrequires_eq	python-modules
 BuildRequires:	python-devel >= 2.2
+BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
+%pyrequires_eq	python-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Beautiful Soup parses arbitrarily invalid SGML and provides a variety of
-methods and Pythonic idioms for iterating and searching the parse tree.
+Beautiful Soup parses arbitrarily invalid SGML and provides a variety
+of methods and Pythonic idioms for iterating and searching the parse
+tree.
 
 %description -l pl.UTF-8
-Beautiful Soup parsuje, także wadliwy SGML i dostarcza różnorodne metody
-i idiomy pythonowe do iterowania oraz przeszukiwania drzewa wyniku
-parsowania.
+Beautiful Soup parsuje, także wadliwy SGML i dostarcza różnorodne
+metody i idiomy pythonowe do iterowania oraz przeszukiwania drzewa
+wyniku parsowania.
 
 %prep
 %setup -q -n %{_module}-%{version}
