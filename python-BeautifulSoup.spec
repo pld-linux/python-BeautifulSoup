@@ -52,5 +52,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%dir %{_examplesdir}/%{name}-%{version}
 %{_examplesdir}/%{name}-%{version}/BeautifulSoupTests.py
 %{py_sitescriptdir}/BeautifulSoup.py[co]
