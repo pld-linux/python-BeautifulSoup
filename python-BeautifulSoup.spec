@@ -5,7 +5,7 @@ Summary:	A BeautifulSoup library for Python
 Summary(pl.UTF-8):	Biblioteka BeautifulSoup dla Pythona
 Name:		python-%{_module}
 Version:	3.0.5
-Release:	1
+Release:	2
 License:	Python
 Group:		Development/Languages/Python
 Source0:	http://www.crummy.com/software/BeautifulSoup/download/%{_module}.tar.gz
