@@ -4,12 +4,12 @@
 Summary:	A BeautifulSoup library for Python
 Summary(pl.UTF-8):	Biblioteka BeautifulSoup dla Pythona
 Name:		python-%{_module}
-Version:	3.1.0.1
-Release:	2
+Version:	3.2.0
+Release:	1
 License:	Python
 Group:		Development/Languages/Python
-Source0:	http://www.crummy.com/software/BeautifulSoup/download/%{_module}.tar.gz
-# Source0-md5:	bcffef3eda6e06e6d1e18c06a9db8a24
+Source0:	http://www.crummy.com/software/%{_module}/download/3.x/%{_module}-%{version}.tar.gz
+# Source0-md5:	ef1e78f7689ea61314f7bddebcfde88c
 URL:		http://www.crummy.com/software/BeautifulSoup/
 BuildRequires:	python-devel >= 2.2
 BuildRequires:	rpm-pythonprov
@@ -55,3 +55,4 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_examplesdir}/%{name}-%{version}
 %{_examplesdir}/%{name}-%{version}/BeautifulSoupTests.py
 %{py_sitescriptdir}/BeautifulSoup.py[co]
+%{py_sitescriptdir}/BeautifulSoup-%{version}-*.egg-info
