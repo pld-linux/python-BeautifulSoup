@@ -13,7 +13,7 @@ Source0:	http://www.crummy.com/software/%{_module}/download/3.x/%{_module}-%{ver
 URL:		http://www.crummy.com/software/BeautifulSoup/
 BuildRequires:	python-devel >= 2.2
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 %pyrequires_eq	python-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
